@@ -55,7 +55,7 @@ const CosmicHero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl"
         >
-          Xtract brings AI automation to your fingertips & streamlines tasks.
+          invera brings AI automation to your fingertips & streamlines tasks.
         </motion.p>
 
         <motion.div 

@@ -100,7 +100,7 @@ const ProductsPage = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6 text-white">Ready to Transform Your Business?</h2>
           <p className="text-zinc-400 max-w-2xl mx-auto mb-8">
-            Whether you need streamlined user tools or advanced AI infrastructure, Xtract has the solution.
+            Whether you need streamlined user tools or advanced AI infrastructure, invera has the solution.
           </p>
           <Button size="lg" className="bg-white text-black hover:bg-zinc-200 rounded-full">
             Contact Sales

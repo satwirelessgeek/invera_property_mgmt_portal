@@ -109,7 +109,7 @@ export function Footer() {
 
         <div className="border-t border-border/40 mt-12 pt-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} inveralabs. All rights reserved.
+            © {new Date().getFullYear()} invera. All rights reserved.
           </p>
           <div className="flex gap-6">
             <span className="text-sm text-muted-foreground">Made with Passion</span>
