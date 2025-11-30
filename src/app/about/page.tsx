@@ -118,7 +118,7 @@ const AboutPage = () => {
           <div className="max-w-3xl mx-auto relative">
             <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-zinc-800 transform md:-translate-x-1/2" />
             {[
-              { year: "2025", title: "Inception", desc: "Xtract was founded with a vision to simplify AI adoption." },
+              { year: "2025", title: "Inception", desc: "Invera was founded with a vision to simplify AI adoption." },
               { year: "2026", title: "First Product Launch", desc: "Launched our MVP for Legal Document Automation." },
               { year: "2027", title: "Seed Funding", desc: "Secured initial funding to expand our research team." },
               { year: "2028", title: "Global Expansion", desc: "Opened offices in 3 new countries and launched Sanjay Drishti." }
