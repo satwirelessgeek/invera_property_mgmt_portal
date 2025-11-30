@@ -17,9 +17,9 @@ const categories = [
   },
   {
     title: "AI Domain Products",
-    description: "Cutting-edge AI solutions designed to ease daily tasks and enhance productivity.",
+    description: "Advanced artificial intelligence tools for developers and enterprises.",
     icon: <Brain className="h-10 w-10 text-purple-400" />,
-    items: ["Invera LLM Proxy", "Invera Drishti", "Invera Outlier Identifiers", "Legal Document Analyzer","Invera Missing Person Finder"],
+    items: ["LLM Gateway", "Sanjay Drishti", "AI Thief Detection"],
     href: "/products?tab=ai"
   }
 ];
@@ -50,7 +50,7 @@ const ProductCategories = () => {
             transition={{ delay: 0.1 }}
             className="text-muted-foreground text-lg"
           >
-            Explore our range of intelligent products designed to solve basic problems.
+            Explore our range of intelligent products designed to automate and secure your business.
           </motion.p>
         </div>
 
