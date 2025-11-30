@@ -46,7 +46,7 @@ const CosmicHero = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="text-5xl md:text-7xl font-bold tracking-tight max-w-4xl bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60 pb-2"
         >
-          Intelligent Automation for Modern Businesses.
+          AI powered Inteligent solutions for <br/> Everyday Challenges
         </motion.h1>
 
         <motion.p 
@@ -55,7 +55,7 @@ const CosmicHero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl"
         >
-          Xtract brings AI automation to your fingertips & streamlines tasks.
+          AI powered Inteligent solutions for Everyday Challenges
         </motion.p>
 
         <motion.div 
