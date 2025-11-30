@@ -66,7 +66,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-medium text-white mb-1">Headquarters</h3>
-                      <p className="text-zinc-400">Invera Labs,B1143,Birchwood<br />Pristige Sunrise Parl,EC-560100</p>
+                      <p className="text-zinc-400">Invera Labs Private Limited<br /> B-1143, Birchwood<br />Prestige Sunrise Park<br />Electronic City-1<br /> Bangalore-560100, Karnataka<br />INDIA</p>
                     </div>
                   </div>
 
@@ -120,17 +120,17 @@ const ContactPage = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <Label htmlFor="firstName" className="text-zinc-300">First Name</Label>
-                        <Input id="firstName" placeholder="John" className="bg-zinc-900/50 border-white/10 focus:border-purple-500" required />
+                        <Input id="firstName" placeholder="Aashwath" className="bg-zinc-900/50 border-white/10 focus:border-purple-500" required />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="lastName" className="text-zinc-300">Last Name</Label>
-                        <Input id="lastName" placeholder="Doe" className="bg-zinc-900/50 border-white/10 focus:border-purple-500" required />
+                        <Input id="lastName" placeholder="Verma" className="bg-zinc-900/50 border-white/10 focus:border-purple-500" required />
                       </div>
                     </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="email" className="text-zinc-300">Email Address</Label>
-                      <Input id="email" type="email" placeholder="john@example.com" className="bg-zinc-900/50 border-white/10 focus:border-purple-500" required />
+                      <Input id="email" type="email" placeholder="aashwath@example.com" className="bg-zinc-900/50 border-white/10 focus:border-purple-500" required />
                     </div>
 
                     <div className="space-y-2">

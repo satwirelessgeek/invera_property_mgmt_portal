@@ -17,7 +17,7 @@ export function Footer() {
               <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-xl">X</span>
               </div>
-              <span className="text-xl font-bold tracking-tight">invera</span>
+              <span className="text-xl font-bold tracking-tight">Invera Labs</span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Cutting edge technology solutions to simplify your life and enhance productivity.
@@ -110,9 +110,6 @@ export function Footer() {
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} Invera labs Pvt Limited. All rights reserved.
           </p>
-          <div className="flex gap-6">
-            <span className="text-sm text-muted-foreground">Made with ❤️ by Orchids</span>
-          </div>
         </div>
       </div>
     </footer>
