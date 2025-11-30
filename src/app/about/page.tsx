@@ -13,14 +13,14 @@ const AboutPage = () => {
       <section className="relative py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/20 via-black to-black" />
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-500"
           >
             Pioneering the Future of AI
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
@@ -35,7 +35,7 @@ const AboutPage = () => {
       <section className="py-16 bg-zinc-900/50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -49,8 +49,8 @@ const AboutPage = () => {
                 To democratize access to advanced AI technologies, enabling businesses of all sizes to automate workflows, enhance security, and unlock new opportunities for growth through intelligent data einveraion and analysis.
               </p>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -115,6 +115,7 @@ const AboutPage = () => {
       <section className="py-20 bg-zinc-900/30">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-16">Our Journey</h2>
+          <h2 className="text-3xl font-bold text-center mb-16">Our Journey</h2>
           <div className="max-w-3xl mx-auto relative">
             <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-zinc-800 transform md:-translate-x-1/2" />
             {[
@@ -123,7 +124,7 @@ const AboutPage = () => {
               { year: "2024", title: "Seed Funding", desc: "Secured initial funding to expand our research team." },
               { year: "2025", title: "Global Expansion", desc: "Opened offices in 3 new countries and launched Sanjay Drishti." }
             ].map((item, index) => (
-              <motion.div 
+              <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -155,10 +156,10 @@ const AboutPage = () => {
             <h2 className="text-3xl font-bold mb-4">Meet the Team</h2>
             <p className="text-muted-foreground">The minds behind the machines.</p>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[1, 2, 3, 4].map((i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -173,7 +174,7 @@ const AboutPage = () => {
                     <p className="text-sm text-zinc-400">Position Title</p>
                   </div>
                   <div className="absolute inset-0 flex items-center justify-center opacity-20 group-hover:opacity-30 transition-opacity">
-                     <Users className="w-20 h-20 text-zinc-500" />
+                    <Users className="w-20 h-20 text-zinc-500" />
                   </div>
                 </div>
               </motion.div>
