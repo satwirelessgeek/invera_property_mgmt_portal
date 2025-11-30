@@ -26,7 +26,7 @@ const AboutPage = () => {
             transition={{ delay: 0.1 }}
             className="text-xl text-muted-foreground max-w-2xl mx-auto"
           >
-            At Xtract, we bridge the gap between complex artificial intelligence and practical business solutions.
+            At invera, we bridge the gap between complex artificial intelligence and practical business solutions.
           </motion.p>
         </div>
       </section>
@@ -46,7 +46,7 @@ const AboutPage = () => {
               </div>
               <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
               <p className="text-zinc-400 leading-relaxed">
-                To democratize access to advanced AI technologies, enabling businesses of all sizes to automate workflows, enhance security, and unlock new opportunities for growth through intelligent data extraction and analysis.
+                To democratize access to advanced AI technologies, enabling businesses of all sizes to automate workflows, enhance security, and unlock new opportunities for growth through intelligent data einveraion and analysis.
               </p>
             </motion.div>
             
@@ -75,13 +75,13 @@ const AboutPage = () => {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-900/30 border border-purple-500/30 text-purple-300 text-sm font-medium mb-6">
-                <Microscope className="w-4 h-4" /> Xtract AI Labs
+                <Microscope className="w-4 h-4" /> invera AI Labs
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Pushing the Boundaries of Possibility
               </h2>
               <p className="text-zinc-400 mb-6 leading-relaxed">
-                Our dedicated research division, Xtract AI Labs, is constantly exploring new frontiers in computer vision, natural language processing, and neural architecture. We don't just use existing models; we build, fine-tune, and optimize them for specific industry challenges.
+                Our dedicated research division, invera AI Labs, is constantly exploring new frontiers in computer vision, natural language processing, and neural architecture. We don't just use existing models; we build, fine-tune, and optimize them for specific industry challenges.
               </p>
               <ul className="space-y-4">
                 {["Custom LLM Fine-tuning", "Real-time Computer Vision", "Automated Decision Systems"].map((item, i) => (
@@ -118,7 +118,7 @@ const AboutPage = () => {
           <div className="max-w-3xl mx-auto relative">
             <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-zinc-800 transform md:-translate-x-1/2" />
             {[
-              { year: "2023", title: "Inception", desc: "Xtract was founded with a vision to simplify AI adoption." },
+              { year: "2023", title: "Inception", desc: "invera was founded with a vision to simplify AI adoption." },
               { year: "2024", title: "First Product Launch", desc: "Launched our MVP for Legal Document Automation." },
               { year: "2024", title: "Seed Funding", desc: "Secured initial funding to expand our research team." },
               { year: "2025", title: "Global Expansion", desc: "Opened offices in 3 new countries and launched Sanjay Drishti." }
