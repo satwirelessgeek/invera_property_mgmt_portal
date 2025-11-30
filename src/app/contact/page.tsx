@@ -66,7 +66,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-medium text-white mb-1">Headquarters</h3>
-                      <p className="text-zinc-400">123 Innovation Drive, Tech Valley<br/>San Francisco, CA 94107</p>
+                      <p className="text-zinc-400">Invera Labs,B1143,Birchwood<br/>Pristige Sunrise Parl,EC-560100</p>
                     </div>
                   </div>
                   
@@ -76,7 +76,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-medium text-white mb-1">Email Us</h3>
-                      <p className="text-zinc-400">hello@xtract.ai<br/>support@xtract.ai</p>
+                      <p className="text-zinc-400">inveralabs.gmail.com<br/></p>
                     </div>
                   </div>
                   
@@ -86,7 +86,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-medium text-white mb-1">Call Us</h3>
-                      <p className="text-zinc-400">+1 (555) 123-4567<br/>Mon-Fri, 9am-6pm PST</p>
+                      <p className="text-zinc-400">+91-9740166722<br/>Mon-Fri, 9am-6pm PST</p>
                     </div>
                   </div>
                 </div>

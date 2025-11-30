@@ -40,9 +40,9 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-xl">X</span>
+            <span className="text-primary-foreground font-bold text-xl"> i</span>
           </div>
-          <span className="text-xl font-bold tracking-tight">XTRACT</span>
+          <span className="text-xl font-bold tracking-tight">inveralabs</span>
         </Link>
 
         {/* Desktop Nav */}
