@@ -15,12 +15,12 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <Link href="/" className="flex items-center gap-2">
               <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">i</span>
+                <span className="text-primary-foreground font-bold text-xl">X</span>
               </div>
-              <span className="text-xl font-bold tracking-tight">invera</span>
+              <span className="text-xl font-bold tracking-tight">XTRACT</span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Empowering businesses with intelligent automation and cutting-edge AI solutions. 
+              Empowering businesses with intelligent automation and cutting-edge AI solutions.
               Streamline your workflow and unlock new potentials.
             </p>
             <div className="flex items-center gap-4 mt-2">
@@ -95,9 +95,9 @@ export function Footer() {
               Subscribe to get the latest news and updates.
             </p>
             <div className="flex gap-2">
-              <Input 
-                type="email" 
-                placeholder="Enter your email" 
+              <Input
+                type="email"
+                placeholder="Enter your email"
                 className="bg-secondary/50 border-white/10"
               />
               <Button size="icon" className="shrink-0">
@@ -112,7 +112,7 @@ export function Footer() {
             © {new Date().getFullYear()} invera. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <span className="text-sm text-muted-foreground">Made with Passion</span>
+            <span className="text-sm text-muted-foreground">Made with ❤️ by Orchids</span>
           </div>
         </div>
       </div>

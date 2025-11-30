@@ -28,14 +28,14 @@ const ContactPage = () => {
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/20 via-black to-black" />
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-400"
           >
             Get in Touch
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
@@ -49,9 +49,9 @@ const ContactPage = () => {
       <section className="pb-24">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            
+
             {/* Contact Information */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
@@ -66,27 +66,27 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-medium text-white mb-1">Headquarters</h3>
-                      <p className="text-zinc-400">Invera Labs Private Limited.<br/> B-1143, Birchwood<br/>Prestige Sunrise Park<br/>Electronic City-1<br/> Bangalore-560100, Karnataka<br/>INDIA</p>
+                      <p className="text-zinc-400">123 Innovation Drive, Tech Valley<br />San Francisco, CA 94107</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start gap-4">
                     <div className="bg-blue-900/20 p-3 rounded-lg shrink-0">
                       <Mail className="h-6 w-6 text-blue-400" />
                     </div>
                     <div>
                       <h3 className="font-medium text-white mb-1">Email Us</h3>
-                      <p className="text-zinc-400">inveralabs@gmail.com<br/></p>
+                      <p className="text-zinc-400">hello@xtract.ai<br />support@xtract.ai</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start gap-4">
                     <div className="bg-green-900/20 p-3 rounded-lg shrink-0">
                       <Phone className="h-6 w-6 text-green-400" />
                     </div>
                     <div>
                       <h3 className="font-medium text-white mb-1">Call Us</h3>
-                      <p className="text-zinc-400">+91-9740166722<br/>Mon-Fri, 9am-6pm IST</p>
+                      <p className="text-zinc-400">+1 (555) 123-4567<br />Mon-Fri, 9am-6pm PST</p>
                     </div>
                   </div>
                 </div>
@@ -95,10 +95,10 @@ const ContactPage = () => {
               {/* Map Placeholder */}
               <div className="bg-zinc-900/50 border border-white/5 rounded-2xl overflow-hidden aspect-video relative group">
                 <div className="absolute inset-0 bg-zinc-800/50 flex items-center justify-center">
-                   <div className="text-center">
-                     <MapPin className="h-12 w-12 text-zinc-600 mx-auto mb-2 group-hover:text-purple-500 transition-colors group-hover:scale-110 transform duration-300" />
-                     <span className="text-zinc-500 text-sm">Interactive Map Placeholder</span>
-                   </div>
+                  <div className="text-center">
+                    <MapPin className="h-12 w-12 text-zinc-600 mx-auto mb-2 group-hover:text-purple-500 transition-colors group-hover:scale-110 transform duration-300" />
+                    <span className="text-zinc-500 text-sm">Interactive Map Placeholder</span>
+                  </div>
                 </div>
                 {/* Decorative grid */}
                 <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay" />
@@ -106,7 +106,7 @@ const ContactPage = () => {
             </motion.div>
 
             {/* Contact Form */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3 }}
@@ -115,7 +115,7 @@ const ContactPage = () => {
                 <CardContent className="p-8">
                   <h2 className="text-2xl font-bold mb-2 text-white">Send us a message</h2>
                   <p className="text-zinc-400 mb-8">Fill out the form below and our team will get back to you shortly.</p>
-                  
+
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
@@ -127,22 +127,22 @@ const ContactPage = () => {
                         <Input id="lastName" placeholder="Verma" className="bg-zinc-900/50 border-white/10 focus:border-purple-500" required />
                       </div>
                     </div>
-                    
+
                     <div className="space-y-2">
                       <Label htmlFor="email" className="text-zinc-300">Email Address</Label>
                       <Input id="email" type="email" placeholder="aashwath@example.com" className="bg-zinc-900/50 border-white/10 focus:border-purple-500" required />
                     </div>
-                    
+
                     <div className="space-y-2">
                       <Label htmlFor="subject" className="text-zinc-300">Subject</Label>
                       <Input id="subject" placeholder="Product Inquiry" className="bg-zinc-900/50 border-white/10 focus:border-purple-500" required />
                     </div>
-                    
+
                     <div className="space-y-2">
                       <Label htmlFor="message" className="text-zinc-300">Message</Label>
                       <Textarea id="message" placeholder="How can we help you?" className="min-h-[150px] bg-zinc-900/50 border-white/10 focus:border-purple-500" required />
                     </div>
-                    
+
                     <Button type="submit" className="w-full bg-white text-black hover:bg-zinc-200" disabled={isSubmitting}>
                       {isSubmitting ? (
                         <span className="flex items-center gap-2">
@@ -159,7 +159,7 @@ const ContactPage = () => {
                 </CardContent>
               </Card>
             </motion.div>
-            
+
           </div>
         </div>
       </section>
