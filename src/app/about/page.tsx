@@ -114,14 +114,14 @@ const AboutPage = () => {
       {/* Milestone Timeline */}
       <section className="py-20 bg-zinc-900/30">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-16">Our Journey</h2>
+          <h2 className="text-3xl font-bold text-center mb-16">Our Journey and Future Plan</h2>
           <div className="max-w-3xl mx-auto relative">
             <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-zinc-800 transform md:-translate-x-1/2" />
             {[
-              { year: "2023", title: "Inception", desc: "Xtract was founded with a vision to simplify AI adoption." },
-              { year: "2024", title: "First Product Launch", desc: "Launched our MVP for Legal Document Automation." },
-              { year: "2024", title: "Seed Funding", desc: "Secured initial funding to expand our research team." },
-              { year: "2025", title: "Global Expansion", desc: "Opened offices in 3 new countries and launched Sanjay Drishti." }
+              { year: "2025", title: "Inception", desc: "Xtract was founded with a vision to simplify AI adoption." },
+              { year: "2026", title: "First Product Launch", desc: "Launched our MVP for Legal Document Automation." },
+              { year: "2027", title: "Seed Funding", desc: "Secured initial funding to expand our research team." },
+              { year: "2028", title: "Global Expansion", desc: "Opened offices in 3 new countries and launched Sanjay Drishti." }
             ].map((item, index) => (
               <motion.div 
                 key={index}

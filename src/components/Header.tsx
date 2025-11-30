@@ -10,9 +10,10 @@ import { cn } from "@/lib/utils";
 
 const navItems = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
+  { name: "About Us", href: "/about us" },
   { name: "Products", href: "/products" },
-  { name: "Contact Us", href: "/contact" },
+  { name: "Contact Us", href: "/contact us" },
+    { name: "Meet Our Team", href: "/Meet Our Team" },
 ];
 
 export function Header() {
