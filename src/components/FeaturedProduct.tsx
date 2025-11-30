@@ -22,31 +22,13 @@ const FeaturedProduct = () => {
               <Zap className="w-4 h-4" /> Featured Innovation
             </div>
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight">
-              Invera Drishti: <br/>
+              Sanjay Drishti: <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
                 Vision Beyond Sight
               </span>
             </h2>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight">
-              Invera LLM Proxy: <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
-                One stop solution for all your LLM interconnection needs
-              </span>
-            </h2>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight">
-              Invera Missing Person Finder: <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
-                Single platform to locate missing individuals using AI-powered search
-              </span>
-            </h2>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight">
-              Invera Legal Document Analyzer: <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
-                One stop solution to analyze and summarize legal documents efficiently
-              </span>
-            </h2>
             <p className="text-lg text-zinc-400 mb-8 leading-relaxed">
-              Our AI-powered intelligent solutions redefines security through intelligent vision.
+              Our flagship computer vision platform that transforms standard surveillance into intelligent, actionable insights. Detect threats, analyze patterns, and secure your premises with real-time AI processing.
             </p>
             
             <div className="space-y-4 mb-8">

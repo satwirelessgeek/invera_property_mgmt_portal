@@ -17,10 +17,11 @@ export function Footer() {
               <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-xl">i</span>
               </div>
-              <span className="text-xl font-bold tracking-tight">Invera Labs</span>
+              <span className="text-xl font-bold tracking-tight">invera</span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Cutting edge technology solutions to simplify your life and enhance productivity.
+              Empowering businesses with intelligent automation and cutting-edge AI solutions. 
+              Streamline your workflow and unlock new potentials.
             </p>
             <div className="flex items-center gap-4 mt-2">
               <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
@@ -108,7 +109,7 @@ export function Footer() {
 
         <div className="border-t border-border/40 mt-12 pt-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Invera labs Pvt Limited. All rights reserved.
+            © {new Date().getFullYear()} inveralabs. All rights reserved.
           </p>
           <div className="flex gap-6">
             <span className="text-sm text-muted-foreground">Made with Passion</span>
