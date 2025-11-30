@@ -66,7 +66,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-medium text-white mb-1">Headquarters</h3>
-                      <p className="text-zinc-400">123 Innovation Drive, Tech Valley<br />San Francisco, CA 94107</p>
+                      <p className="text-zinc-400">Invera Labs,B1143,Birchwood<br />Pristige Sunrise Parl,EC-560100</p>
                     </div>
                   </div>
 
@@ -76,7 +76,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-medium text-white mb-1">Email Us</h3>
-                      <p className="text-zinc-400">hello@xtract.ai<br />support@xtract.ai</p>
+                      <p className="text-zinc-400">inveralabs@gmail.com<br /></p>
                     </div>
                   </div>
 
@@ -86,7 +86,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-medium text-white mb-1">Call Us</h3>
-                      <p className="text-zinc-400">+1 (555) 123-4567<br />Mon-Fri, 9am-6pm PST</p>
+                      <p className="text-zinc-400">+91-9740166722<br />Mon-Fri, 9am-6pm IST</p>
                     </div>
                   </div>
                 </div>
@@ -120,17 +120,17 @@ const ContactPage = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <Label htmlFor="firstName" className="text-zinc-300">First Name</Label>
-                        <Input id="firstName" placeholder="Aashwath" className="bg-zinc-900/50 border-white/10 focus:border-purple-500" required />
+                        <Input id="firstName" placeholder="John" className="bg-zinc-900/50 border-white/10 focus:border-purple-500" required />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="lastName" className="text-zinc-300">Last Name</Label>
-                        <Input id="lastName" placeholder="Verma" className="bg-zinc-900/50 border-white/10 focus:border-purple-500" required />
+                        <Input id="lastName" placeholder="Doe" className="bg-zinc-900/50 border-white/10 focus:border-purple-500" required />
                       </div>
                     </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="email" className="text-zinc-300">Email Address</Label>
-                      <Input id="email" type="email" placeholder="aashwath@example.com" className="bg-zinc-900/50 border-white/10 focus:border-purple-500" required />
+                      <Input id="email" type="email" placeholder="john@example.com" className="bg-zinc-900/50 border-white/10 focus:border-purple-500" required />
                     </div>
 
                     <div className="space-y-2">
