@@ -21,25 +21,25 @@ const FeaturedProduct = () => {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-900/30 border border-purple-500/30 text-purple-300 text-sm font-medium mb-6">
               <Zap className="w-4 h-4" /> Featured Innovation
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white leading-tight">
               Invera Drishti: <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
                 Vision Beyond Sight
               </span>
             </h2>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white leading-tight">
               Invera LLM Proxy: <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
                 One stop solution for all your LLM interconnection needs
               </span>
             </h2>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white leading-tight">
               Invera Missing Person Finder: <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
                 Single platform to locate missing individuals using AI-powered search
               </span>
             </h2>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white leading-tight">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white leading-tight">
               Invera Legal Document Analyzer: <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
                 One stop solution to analyze and summarize legal documents efficiently

@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 const navItems = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
-  { name: "Meet Our Team", href: "/Meet Our Team" },
+  { name: "Products", href: "/products" },
   { name: "Contact Us", href: "/contact" },
 ];
 
@@ -40,9 +40,9 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-xl">X</span>
+            <span className="text-primary-foreground font-bold text-xl">I</span>
           </div>
-          <span className="text-xl font-bold tracking-tight">Invera Labs</span>
+          <span className="text-xl font-bold tracking-tight">Invera Software Labs</span>
         </Link>
 
         {/* Desktop Nav */}
