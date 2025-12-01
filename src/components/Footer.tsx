@@ -15,9 +15,9 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <Link href="/" className="flex items-center gap-2">
               <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">X</span>
+                <span className="text-primary-foreground font-bold text-xl">I</span>
               </div>
-              <span className="text-xl font-bold tracking-tight">Invera Labs</span>
+              <span className="text-xl font-bold tracking-tight">Invera Software Labs</span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Cutting edge technology solutions to simplify your life and enhance productivity.
@@ -108,7 +108,7 @@ export function Footer() {
 
         <div className="border-t border-border/40 mt-12 pt-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Invera labs Pvt Limited. All rights reserved.
+            © {new Date().getFullYear()} Invera Software Labs Pvt Limited. All rights reserved.
           </p>
         </div>
       </div>

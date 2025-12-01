@@ -304,7 +304,7 @@ function ChartLegendContent({
   )
 }
 
-// Helper to einvera item config from a payload.
+// Helper to Invera item config from a payload.
 function getPayloadConfigFromPayload(
   config: ChartConfig,
   payload: unknown,

@@ -12,7 +12,7 @@ const categories = [
     title: "User Usage Products",
     description: "Practical solutions for everyday challenges, from parking management to document creation.",
     icon: <Car className="h-10 w-10 text-blue-400" />,
-    items: ["Multilevel Parking", "Legal Document Creator"],
+    items: ["Multilevel Parking Slot Locator", "Legal Document Analyzer", "Invera Outlier Identifiers"],
     href: "/products?tab=user"
   },
   {
