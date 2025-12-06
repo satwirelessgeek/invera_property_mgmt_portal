@@ -7,8 +7,10 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Car, FileText, Network, Eye, ShieldAlert, Check } from "lucide-react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const ProductsPage = () => {
+ 
   return (
     <div className="min-h-screen bg-black text-foreground pt-20">
       {/* Hero Section */}
@@ -36,10 +38,10 @@ const ProductsPage = () => {
       {/* Products Tabs */}
       <section className="pb-24">
         <div className="container mx-auto px-4">
-          <Tabs defaultValue="user" className="w-full flex flex-col items-center">
+          <Tabs defaultValue="ai" className="w-full flex flex-col items-center">
             <TabsList className="grid w-full max-w-md grid-cols-2 bg-zinc-900 border border-zinc-800 mb-12">
-              <TabsTrigger value="user" className="data-[state=active]:bg-blue-600 data-[state=active]:text-white">User Usage</TabsTrigger>
               <TabsTrigger value="ai" className="data-[state=active]:bg-purple-600 data-[state=active]:text-white">AI Domain</TabsTrigger>
+              <TabsTrigger value="user" className="data-[state=active]:bg-blue-600 data-[state=active]:text-white">User Usage</TabsTrigger>
             </TabsList>
             
             <TabsContent value="user" className="w-full max-w-6xl mt-0">
@@ -117,42 +119,55 @@ const ProductCard = ({ title, description, icon, features, gradient, borderColor
   icon: React.ReactNode, 
   features: string[],
   gradient: string,
-  borderColor: string
-}) => (
-  <motion.div
-    initial={{ opacity: 0, scale: 0.95 }}
-    whileInView={{ opacity: 1, scale: 1 }}
-    viewport={{ once: true }}
-    className="h-full"
-  >
-    <Card className={`h-full bg-black border ${borderColor} overflow-hidden relative group hover:border-opacity-50 transition-colors duration-300`}>
-      <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-50 group-hover:opacity-70 transition-opacity`} />
-      <CardHeader className="relative z-10">
-        <div className="mb-4 p-3 rounded-xl bg-black/50 w-fit border border-white/10 backdrop-blur-sm">
-          {icon}
-        </div>
-        <CardTitle className="text-2xl text-white">{title}</CardTitle>
-        <CardDescription className="text-zinc-400 text-base mt-2">
-          {description}
-        </CardDescription>
-      </CardHeader>
-      <CardContent className="relative z-10">
-        <ul className="space-y-3 mt-4">
-          {features.map((feature, i) => (
-            <li key={i} className="flex items-start gap-3 text-sm text-zinc-300">
-              <Check className="h-4 w-4 text-green-500 mt-1 shrink-0" />
-              {feature}
-            </li>
-          ))}
-        </ul>
-      </CardContent>
-      <CardFooter className="relative z-10 mt-auto">
-        <Button variant="ghost" className="w-full justify-between hover:bg-white/10 hover:text-white text-zinc-300 group-hover:translate-x-1 transition-all">
-          Learn more <ArrowRight className="h-4 w-4" />
-        </Button>
-      </CardFooter>
-    </Card>
-  </motion.div>
-);
+  borderColor: string,
+  
+}) =>{
 
+  const router = useRouter();   // ✅ FIX: Now router is available here
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.95 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      className="h-full"
+    >
+      <Card className={`h-full bg-black border ${borderColor} overflow-hidden relative group hover:border-opacity-50 transition-colors duration-300`}>
+        <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-50 group-hover:opacity-70 transition-opacity`} />
+        
+        <CardHeader className="relative z-10">
+          <div className="mb-4 p-3 rounded-xl bg-black/50 w-fit border border-white/10 backdrop-blur-sm">
+            {icon}
+          </div>
+          <CardTitle className="text-2xl text-white">{title}</CardTitle>
+          <CardDescription className="text-zinc-400 text-base mt-2">
+            {description}
+          </CardDescription>
+        </CardHeader>
+
+        <CardContent className="relative z-10">
+          <ul className="space-y-3 mt-4">
+            {features.map((feature, i) => (
+              <li key={i} className="flex items-start gap-3 text-sm text-zinc-300">
+                <Check className="h-4 w-4 text-green-500 mt-1 shrink-0" />
+                {feature}
+              </li>
+            ))}
+          </ul>
+        </CardContent>
+
+        <CardFooter className="relative z-10 mt-auto">
+          <Button 
+            variant="ghost" 
+            onClick={() => router.push("/llm")}     // ✅ Now works
+            className="w-full justify-between hover:bg-white/10 hover:text-white text-zinc-300 group-hover:translate-x-1 transition-all"
+          >
+            Learn more <ArrowRight className="h-4 w-4" />
+          </Button>
+        </CardFooter>
+
+      </Card>
+    </motion.div>
+  );
+};
 export default ProductsPage;
