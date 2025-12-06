@@ -55,7 +55,7 @@ const CosmicHero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl"
         >
-          Inspired by More collaborative Future between Human & Machine 
+          Inspired By More Collaborative Future Between Human & Machine 
         </motion.p>
 
         <motion.div

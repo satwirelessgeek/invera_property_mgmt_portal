@@ -42,7 +42,7 @@ export function Header() {
           <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
             <span className="text-primary-foreground font-bold text-xl">I</span>
           </div>
-          <span className="text-xl font-bold tracking-tight">Invera Software Labs</span>
+          <span className="text-xl font-bold tracking-tight">Invera Labs</span>
         </Link>
 
         {/* Desktop Nav */}

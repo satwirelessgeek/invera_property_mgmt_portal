@@ -26,7 +26,7 @@ const AboutPage = () => {
             transition={{ delay: 0.1 }}
             className="text-xl text-muted-foreground max-w-2xl mx-auto"
           >
-            At Invera Software Labs, we bridge the gap between complex artificial intelligence and practical business solutions.
+            At Invera Labs, we bridge the gap between complex artificial intelligence and practical business solutions.
           </motion.p>
         </div>
       </section>
@@ -75,13 +75,13 @@ const AboutPage = () => {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-900/30 border border-purple-500/30 text-purple-300 text-sm font-medium mb-6">
-                <Microscope className="w-4 h-4" /> Invera Software Labs
+                <Microscope className="w-4 h-4" /> Invera Labs
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Pushing the Boundaries of Possibility
               </h2>
               <p className="text-zinc-400 mb-6 leading-relaxed">
-                Our dedicated research division, Invera Software Labs, is constantly exploring new frontiers in computer vision, natural language processing, and neural architecture. We don't just use existing models; we build, fine-tune, and optimize them for specific industry challenges.
+                Our dedicated research division, Invera Labs, is constantly exploring new frontiers in computer vision, natural language processing, and neural architecture. We don't just use existing models; we build, fine-tune, and optimize them for specific industry challenges.
               </p>
               <ul className="space-y-4">
                 {["Custom LLM Fine-tuning", "Real-time Computer Vision", "Automated Decision Systems"].map((item, i) => (
