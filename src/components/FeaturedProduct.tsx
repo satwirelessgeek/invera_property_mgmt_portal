@@ -21,40 +21,19 @@ const FeaturedProduct = () => {
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-900/30 border border-purple-500/30 text-purple-300 text-sm font-medium mb-6">
               <Zap className="w-4 h-4" /> Featured Innovation
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white leading-tight">
-              Invera Drishti: <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
-                Vision Beyond Sight
-              </span>
-            </h2>
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white leading-tight">
+            <h2 className="text-2xl md:text-2xl font-bold mb-3 text-white leading-tight">
               Invera LLM Proxy: <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
                 One stop solution for all your LLM interconnection needs
               </span>
             </h2>
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white leading-tight">
-              Invera Missing Person Finder: <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
-                Single platform to locate missing individuals using AI-powered search
-              </span>
-            </h2>
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white leading-tight">
-              Invera Legal Document Analyzer: <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
-                One stop solution to analyze and summarize legal documents efficiently
-              </span>
-            </h2>
-            <p className="text-lg text-zinc-400 mb-8 leading-relaxed">
-              Our AI-powered intelligent solutions redefines security through intelligent vision.
-            </p>
-
             <div className="space-y-4 mb-8">
               {[
-                "Real-time threat detection and alerts",
-                "Advanced pattern recognition algorithms",
-                "Seamless integration with existing hardware",
-                "Privacy-first architecture"
+                "Public Cloud ReadySSO (Okta, Google, Azure AD)",
+                "Fine-grained RBAC & team isolation",
+                "Full audit logs + PII redaction",
+                "SOC 2 Type II compliant",
+                "Deploy anywhere: Cloud, on-prem, or air-gapped"
               ].map((feature, i) => (
                 <div key={i} className="flex items-center gap-3">
                   <CheckCircle2 className="text-green-500 h-5 w-5 shrink-0" />
