@@ -5,8 +5,10 @@ import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const FeaturedProduct = () => {
+   const router = useRouter();   // ✅ initialize correct router
   return (
     <section className="py-24 bg-zinc-950 relative overflow-hidden">
       <div className="container mx-auto px-4">
@@ -42,7 +44,8 @@ const FeaturedProduct = () => {
               ))}
             </div>
 
-            <Button className="bg-white text-black hover:bg-zinc-200 rounded-full px-8 h-12 text-base font-medium">
+            <Button size="lg" onClick={() => router.push("/products")} className="bg-white text-black hover:bg-zinc-200 rounded-full px-8 h-12 text-base font-medium">
+               
               Learn More <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
           </motion.div>
