@@ -1,8 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 export default function LlmPage() {
+    const router = useRouter();
+    const [isFullscreen, setIsFullscreen] = useState(false);
+
     return (
         <div className="min-h-screen bg-[#061226] text-[#e6eef6]">
             {/* Container */}
@@ -50,7 +56,7 @@ export default function LlmPage() {
                     <div className="p-6 rounded-xl bg-[#0b1220]/90 border border-white/5 shadow-xl">
                         <h2 className="text-xl font-semibold mb-2">One API. All models. Zero lock-in.</h2>
                         <p className="text-[#94a3b8]">
-                            Inferalabs LLM Gateway centralizes access to multiple LLM providers behind an OpenAI-compatible API.
+                            Inveralabs LLM Gateway centralizes access to multiple LLM providers behind an OpenAI-compatible API.
                             Route requests intelligently, control costs, enforce policies, and keep sensitive data private —
                             without changing your application code.
                         </p>
@@ -93,10 +99,10 @@ export default function LlmPage() {
 
                         {/* CTA */}
                         <div className="flex gap-3 mt-4">
-                            <button className="px-4 py-2 rounded-lg bg-gradient-to-r from-[#0b74de] to-[#46c0ff] text-[#012037] font-semibold">
+                            <button onClick={() => router.push("/contact")} className="px-4 py-2 rounded-lg bg-gradient-to-r from-[#0b74de] to-[#46c0ff] text-[#012037] font-semibold">
                                 Start free trial
                             </button>
-                            <button className="px-4 py-2 rounded-lg border border-white/10 text-[#94a3b8]">
+                            <button onClick={() => router.push("/contact")} className="px-4 py-2 rounded-lg border border-white/10 text-[#94a3b8]">
                                 Request demo
                             </button>
                         </div>
@@ -108,19 +114,65 @@ export default function LlmPage() {
 
                     {/* Right Sidebar */}
                     <aside>
+                        {/* Fullscreen Modal */}
+                        {isFullscreen && (
+                            <div className="fixed inset-0 z-50 bg-black/90 backdrop-blur-sm flex items-center justify-center">
+                                <button
+                                    onClick={() => setIsFullscreen(false)}
+                                    className="absolute top-4 right-4 z-50 px-4 py-2 bg-white/20 hover:bg-white/30 text-white rounded-lg"
+                                >
+                                    Close
+                                </button>
+
+                                <TransformWrapper
+                                    doubleClick={{ mode: "zoomIn" }}
+                                    pinch={{ disabled: false }}
+                                    wheel={{ step: 40 }}
+                                    minScale={1}
+                                    maxScale={6}
+                                >
+                                    <TransformComponent>
+                                        <div className="relative w-[80vw] h-[80vh] cursor-zoom-in">
+                                            <Image
+                                                src="/llm.png"
+                                                alt="LLM Diagram Fullscreen"
+                                                fill
+                                                className="object-contain select-none pointer-events-none"
+                                            />
+                                        </div>
+                                    </TransformComponent>
+                                </TransformWrapper>
+                            </div>
+                        )}
+
+                        {/* Sidebar Card */}
                         <div className="p-6 rounded-xl bg-[#0b1220]/90 border border-white/5 shadow-xl">
                             <h3 className="font-semibold mb-2">Architecture at a glance</h3>
-                            <p className="text-sm text-[#94a3b8]">A single gateway routes traffic to self-hosted and cloud LLMs.</p>
+                            <p className="text-sm text-[#94a3b8]">
+                                A single gateway routes traffic to self-hosted and cloud LLMs.
+                            </p>
 
-                            <div className="relative w-[300px] h-[200px] rounded-xl overflow-hidden">
-                                <Image
-                                    src="/llm.png"
-                                    alt="LLM Diagram"
-                                    fill
-                                    className="object-contain"
-                                />
-                            </div>
-
+                            <TransformWrapper
+                                doubleClick={{ mode: "zoomIn" }}
+                                pinch={{ disabled: false }}
+                                wheel={{ step: 50 }}
+                                minScale={1}
+                                maxScale={4}
+                            >
+                                <TransformComponent>
+                                    <div
+                                        onClick={() => setIsFullscreen(true)}
+                                        className="relative w-[300px] h-[200px] rounded-xl overflow-hidden cursor-pointer hover:opacity-90 transition"
+                                    >
+                                        <Image
+                                            src="/llm.png"
+                                            alt="LLM Diagram"
+                                            fill
+                                            className="object-contain select-none pointer-events-none"
+                                        />
+                                    </div>
+                                </TransformComponent>
+                            </TransformWrapper>
 
                             <div className="flex gap-4 mt-4 text-sm text-[#94a3b8]">
                                 <div className="flex-1">Observability: Prometheus & Grafana</div>
@@ -128,6 +180,7 @@ export default function LlmPage() {
                             </div>
                         </div>
 
+                        {/* Second Card */}
                         <div className="p-6 rounded-xl bg-[#0b1220]/90 border border-white/5 shadow-xl mt-4">
                             <h4 className="font-semibold mb-2">Why enterprises choose Inferalabs</h4>
                             <ul className="list-disc ml-5 text-sm text-[#94a3b8]">
@@ -138,6 +191,7 @@ export default function LlmPage() {
                             </ul>
                         </div>
                     </aside>
+
                 </section>
 
                 {/* Use Cases */}
@@ -200,7 +254,7 @@ export default function LlmPage() {
                             <li>Switch endpoint — no code changes</li>
                         </ol>
                         <div className="flex gap-3 mt-4">
-                            <button className="px-4 py-2 rounded-lg bg-gradient-to-r from-[#0b74de] to-[#46c0ff] text-[#012037] font-semibold">
+                            <button onClick={() => router.push("/contact")} className="px-4 py-2 rounded-lg bg-gradient-to-r from-[#0b74de] to-[#46c0ff] text-[#012037] font-semibold">
                                 Start trial
                             </button>
                             <button className="px-4 py-2 rounded-lg border border-white/10 text-[#94a3b8]">
