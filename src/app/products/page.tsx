@@ -47,7 +47,7 @@ const ProductsPage = () => {
             <TabsContent value="user" className="w-full max-w-6xl mt-0">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <ProductCard 
-                  title="Multilevel Parking System"
+                  title="Inveralabs Multilevel Parking Manager"
                   description="Smart automated parking management solution for modern urban infrastructure."
                   icon={<Car className="h-8 w-8 text-blue-400" />}
                   features={["Real-time slot availability", "Automated ticketing", "License plate recognition", "Mobile app integration"]}
@@ -55,7 +55,7 @@ const ProductsPage = () => {
                   borderColor="border-blue-500/20"
                 />
                 <ProductCard 
-                  title="Legal Document Creator"
+                  title="Inveralabs Legal Document Generator"
                   description="AI-powered platform for generating accurate, compliant legal documents in minutes."
                   icon={<FileText className="h-8 w-8 text-blue-400" />}
                   features={["Template library", "Natural language input", "Auto-formatting", "Legal compliance check"]}
@@ -68,7 +68,7 @@ const ProductsPage = () => {
             <TabsContent value="ai" className="w-full max-w-6xl mt-0">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <ProductCard 
-                  title="LLM Gateway"
+                  title="Inveralabs LLM Proxy"
                   description="Unified API interface for managing multiple Large Language Model providers seamlessly."
                   icon={<Network className="h-8 w-8 text-purple-400" />}
                   features={["Model failover", "Cost optimization", "Unified schema", "Analytics dashboard"]}
@@ -76,7 +76,7 @@ const ProductsPage = () => {
                   borderColor="border-purple-500/20"
                 />
                 <ProductCard 
-                  title="Sanjay Drishti"
+                  title="Inveralabs Sanjay Drishti"
                   description="Advanced computer vision system providing real-time surveillance insights."
                   icon={<Eye className="h-8 w-8 text-purple-400" />}
                   features={["Object tracking", "Behavior analysis", "Crowd monitoring", "Incident alerts"]}
@@ -84,8 +84,24 @@ const ProductsPage = () => {
                   borderColor="border-purple-500/20"
                 />
                 <ProductCard 
-                  title="AI Thief Detection"
+                  title="Inveralabs Outlier Identifiers"
                   description="Proactive security system that identifies suspicious activities and potential theft."
+                  icon={<ShieldAlert className="h-8 w-8 text-purple-400" />}
+                  features={["Gesture recognition", "Predictive alerts", "Low-light performance", "Instant notification"]}
+                  gradient="from-purple-900/20 to-fuchsia-900/20"
+                  borderColor="border-purple-500/20"
+                />
+                 <ProductCard 
+                  title="Inveralabs Legal Document Analyzer"
+                  description="Proactive security system that identifies suspicious activities and potential theft."
+                  icon={<ShieldAlert className="h-8 w-8 text-purple-400" />}
+                  features={["Gesture recognition", "Predictive alerts", "Low-light performance", "Instant notification"]}
+                  gradient="from-purple-900/20 to-fuchsia-900/20"
+                  borderColor="border-purple-500/20"
+                />
+                 <ProductCard 
+                  title="Invera Missing Person Finder"
+                  description="Help to find missing person."
                   icon={<ShieldAlert className="h-8 w-8 text-purple-400" />}
                   features={["Gesture recognition", "Predictive alerts", "Low-light performance", "Instant notification"]}
                   gradient="from-purple-900/20 to-fuchsia-900/20"
@@ -102,7 +118,7 @@ const ProductsPage = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6 text-white">Ready to Transform Your Business?</h2>
           <p className="text-zinc-400 max-w-2xl mx-auto mb-8">
-            Whether you need streamlined user tools or advanced AI infrastructure, invera has the solution.
+            Whether you need streamlined user tools or advanced AI infrastructure, Invera has the solution.
           </p>
           <Button size="lg" className="bg-white text-black hover:bg-zinc-200 rounded-full">
             Contact Sales
