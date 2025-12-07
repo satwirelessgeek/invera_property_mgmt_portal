@@ -162,10 +162,10 @@ const AboutPage = () => {
 
       {/* --- CARD TEMPLATE FUNCTION --- */}
       {[
-        { name: "Aarshia Verma", role: "Founder & CEO", img: "/images/aarshia.jpg" },
-        { name: "Aarsh Verma", role: "Director", img: "/images/aarsh.jpg" },
-        { name: "Mr. Satish", role: "Advisor", img: "/images/satish.jpg" },
-        { name: "Miss Manju", role: "Advisor", img: "/images/manju.jpg" }
+        { name: "Aarshia Verma", role: "Founder & CEO", img: "/aarshia.jpeg" },
+        { name: "Aarsh Verma", role: "Director", img: "/aarsh.jpeg" },
+        { name: "SVerma", role: "Advisor", img: "/public/satish.jpg" },
+        { name: "Manjula", role: "Advisor", img: "/manju.jpg" }
       ].map((person, idx) => (
         <motion.div
           key={idx}

@@ -53,6 +53,8 @@ const ProductsPage = () => {
                   features={["Real-time slot availability", "Automated ticketing", "License plate recognition", "Mobile app integration"]}
                   gradient="from-blue-900/20 to-cyan-900/20"
                   borderColor="border-blue-500/20"
+                   linkv="/llm"
+
                 />
                 <ProductCard 
                   title="Inveralabs Legal Document Generator"
@@ -61,6 +63,7 @@ const ProductsPage = () => {
                   features={["Template library", "Natural language input", "Auto-formatting", "Legal compliance check"]}
                   gradient="from-blue-900/20 to-indigo-900/20"
                   borderColor="border-blue-500/20"
+                   linkv="/llm"
                 />
               </div>
             </TabsContent>
@@ -74,15 +77,17 @@ const ProductsPage = () => {
                   features={["Model failover", "Cost optimization", "Unified schema", "Analytics dashboard"]}
                   gradient="from-purple-900/20 to-pink-900/20"
                   borderColor="border-purple-500/20"
+                    linkv="/llm"
                 />
                 <ProductCard 
                   title="Inveralabs Sanjay Drishti"
-                  description="Advanced computer vision system providing real-time surveillance insights."
+                  description="Sanjay Drishti is an advanced AI-powered mobile application designed to empower visually impaired individuals by translating the world around them into clear, simple English descriptions."
                   icon={<Eye className="h-8 w-8 text-purple-400" />}
                   features={["Object tracking", "Behavior analysis", "Crowd monitoring", "Incident alerts"]}
                   gradient="from-purple-900/20 to-violet-900/20"
                   borderColor="border-purple-500/20"
-                />
+                  linkv="/sanjaydrishti"
+                    />
                 <ProductCard 
                   title="Inveralabs Outlier Identifiers"
                   description="Proactive security system that identifies suspicious activities and potential theft."
@@ -90,6 +95,7 @@ const ProductsPage = () => {
                   features={["Gesture recognition", "Predictive alerts", "Low-light performance", "Instant notification"]}
                   gradient="from-purple-900/20 to-fuchsia-900/20"
                   borderColor="border-purple-500/20"
+                   linkv="/camera"
                 />
                  <ProductCard 
                   title="Inveralabs Legal Document Analyzer"
@@ -98,6 +104,7 @@ const ProductsPage = () => {
                   features={["Gesture recognition", "Predictive alerts", "Low-light performance", "Instant notification"]}
                   gradient="from-purple-900/20 to-fuchsia-900/20"
                   borderColor="border-purple-500/20"
+                   linkv="/llm"
                 />
                  <ProductCard 
                   title="Invera Missing Person Finder"
@@ -106,6 +113,7 @@ const ProductsPage = () => {
                   features={["Gesture recognition", "Predictive alerts", "Low-light performance", "Instant notification"]}
                   gradient="from-purple-900/20 to-fuchsia-900/20"
                   borderColor="border-purple-500/20"
+                   linkv="/llm"
                 />
               </div>
             </TabsContent>
@@ -129,17 +137,17 @@ const ProductsPage = () => {
   );
 };
 
-const ProductCard = ({ title, description, icon, features, gradient, borderColor }: { 
+const ProductCard = ({ title, linkv, description, icon, features, gradient, borderColor }: { 
   title: string, 
+  linkv: string, 
   description: string, 
   icon: React.ReactNode, 
   features: string[],
   gradient: string,
   borderColor: string,
-  
-}) =>{
+}) => {
 
-  const router = useRouter();   // ✅ FIX: Now router is available here
+  const router = useRouter();
 
   return (
     <motion.div
@@ -149,8 +157,9 @@ const ProductCard = ({ title, description, icon, features, gradient, borderColor
       className="h-full"
     >
       <Card className={`h-full bg-black border ${borderColor} overflow-hidden relative group hover:border-opacity-50 transition-colors duration-300`}>
+
         <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-50 group-hover:opacity-70 transition-opacity`} />
-        
+
         <CardHeader className="relative z-10">
           <div className="mb-4 p-3 rounded-xl bg-black/50 w-fit border border-white/10 backdrop-blur-sm">
             {icon}
@@ -175,7 +184,7 @@ const ProductCard = ({ title, description, icon, features, gradient, borderColor
         <CardFooter className="relative z-10 mt-auto">
           <Button 
             variant="ghost" 
-            onClick={() => router.push("/llm")}     // ✅ Now works
+            onClick={() => router.push(linkv)}   // FIXED
             className="w-full justify-between hover:bg-white/10 hover:text-white text-zinc-300 group-hover:translate-x-1 transition-all"
           >
             Learn more <ArrowRight className="h-4 w-4" />
@@ -186,4 +195,5 @@ const ProductCard = ({ title, description, icon, features, gradient, borderColor
     </motion.div>
   );
 };
+
 export default ProductsPage;
