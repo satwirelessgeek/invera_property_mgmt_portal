@@ -33,8 +33,8 @@ const categories: Category[] = [
     icon: <Brain className="h-10 w-10" />,
     items: [
       "Invera LLM Proxy",
-      "Invera Drishti",
-      "Invera Outlier Identifiers",
+      "Invera SanjayDrishti",
+      "Invera AuraSight",
       "Legal Document Analyzer",
       "Invera Missing Person Finder",
     ],
