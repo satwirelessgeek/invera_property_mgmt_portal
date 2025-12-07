@@ -50,7 +50,8 @@ const CosmicHero = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="text-5xl md:text-7xl font-bold tracking-tight max-w-4xl bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60 pb-2"
         >
-          AI powered Intelligent solutions for <br /> Everyday Challenges
+          AI powered Intelligent solutions for <br /> Everyday Challenges <br />
+          
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}

@@ -66,7 +66,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-medium text-white mb-1">Headquarters</h3>
-                      <p className="text-zinc-400">Invera Labs Private Limited<br /> B-1143, Birchwood<br />Prestige Sunrise Park<br />Electronic City-1<br /> Bangalore-560100, Karnataka<br />INDIA</p>
+                      <p className="text-zinc-400">Invera Labs Private Limited<br /> B-1143, Birchwood<br />Prestige Sunrise Park<br />Electronic City-1<br /> Bengaluru-560100<br />Karnataka, INDIA</p>
                     </div>
                   </div>
 
@@ -86,7 +86,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-medium text-white mb-1">Call Us</h3>
-                      <p className="text-zinc-400">+91-9740166722<br />Mon-Fri, 9am-6pm IST</p>
+                      <p className="text-zinc-400">+91-9740166722<br />Mon-Fri, 9:00 AM-6:00 PM IST</p>
                     </div>
                   </div>
                 </div>

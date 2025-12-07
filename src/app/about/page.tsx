@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { Target, Lightbulb, Users, Award, Calendar, Microscope } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Linkedin, Mail } from "lucide-react";
+
 
 const AboutPage = () => {
   return (
@@ -149,38 +151,90 @@ const AboutPage = () => {
       </section>
 
       {/* Team Placeholders */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Meet the Team</h2>
-            <p className="text-muted-foreground">The minds behind the machines.</p>
+     <section className="py-20">
+  <div className="container mx-auto px-4">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl font-bold mb-4">Meet the Team</h2>
+      <p className="text-muted-foreground">The minds behind the machines.</p>
+    </div>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+      {/* --- CARD TEMPLATE FUNCTION --- */}
+      {[
+        { name: "Aarshia Verma", role: "Founder & CEO", img: "/images/aarshia.jpg" },
+        { name: "Aarsh Verma", role: "Director", img: "/images/aarsh.jpg" },
+        { name: "Mr. Satish", role: "Advisor", img: "/images/satish.jpg" },
+        { name: "Miss Manju", role: "Advisor", img: "/images/manju.jpg" }
+      ].map((person, idx) => (
+        <motion.div
+          key={idx}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: idx * 0.15 }}
+          className="relative group"
+        >
+
+          {/* 🔥 Neon Ring Glow */}
+          <div className="
+            absolute inset-0 rounded-2xl blur-xl opacity-0 
+            group-hover:opacity-70 transition-all duration-500
+            bg-gradient-to-r from-fuchsia-500 via-purple-500 to-blue-500
+          "></div>
+
+          {/* 🌈 Animated Gradient Border */}
+          <div className="
+            relative rounded-2xl p-[2px]
+            bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500
+            animate-gradient-x
+            hover:shadow-[0_0_25px_5px_rgba(168,85,247,0.5)]
+            transition-all duration-500
+          ">
+            <div className="
+              rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 
+              overflow-hidden shadow-xl
+              group-hover:-translate-y-2 transition-all duration-300
+            ">
+
+              {/* Image */}
+              <div className="overflow-hidden">
+                <img
+                  src={person.img}
+                  alt={person.name}
+                  className="
+                    w-full h-60 object-cover rounded-t-2xl 
+                    group-hover:scale-110 transition-transform duration-700
+                  "
+                />
+              </div>
+
+              {/* Content */}
+              <div className="p-5 text-center" >
+                <h3 className="text-lg font-semibold text-white">{person.name}</h3>
+               <p className="text-sm mb-4" style={{ color: "#FFD700" }}>{person.role}</p>
+
+                {/* Social Icons */}
+                <div className="flex items-center justify-center gap-5">
+                  <a href="#" className="hover:text-blue-400 transition">
+                    <Linkedin className="w-5 h-5" />
+                  </a>
+                  <a href="#" className="hover:text-pink-400 transition">
+                    <Mail className="w-5 h-5" />
+                  </a>
+                </div>
+              </div>
+
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[1, 2, 3, 4].map((i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="group relative"
-              >
-                <div className="relative overflow-hidden rounded-xl aspect-[3/4] bg-zinc-900 border border-white/5">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10" />
-                  <div className="absolute bottom-0 left-0 right-0 p-4 z-20 transform translate-y-2 group-hover:translate-y-0 transition-transform">
-                    <h3 className="text-lg font-semibold text-white">Team Member {i}</h3>
-                    <p className="text-sm text-zinc-400">Director</p>
-                  </div>
-                  <div className="absolute inset-0 flex items-center justify-center opacity-20 group-hover:opacity-30 transition-opacity">
-                    <Users className="w-20 h-20 text-zinc-500" />
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+        </motion.div>
+      ))}
+
+    </div>
+  </div>
+</section>
+
     </div>
   );
 };
