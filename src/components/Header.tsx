@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
@@ -39,10 +40,14 @@ export function Header() {
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-xl">I</span>
-          </div>
-          <span className="text-xl font-bold tracking-tight">Invera Labs</span>
+          <Image
+            src="/logo.png"
+            alt="Invera Labs Logo"
+            width={48}
+            height={48}
+            className="rounded-lg object-contain"
+          />
+          <span className="text-xl font-bold ">Invera Labs</span>
         </Link>
 
         {/* Desktop Nav */}
