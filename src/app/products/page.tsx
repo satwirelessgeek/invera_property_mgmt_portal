@@ -107,13 +107,13 @@ const ProductsPage = () => {
                    linkv="/llm"
                 />
                  <ProductCard 
-                  title="Invera Missing Person Finder"
+                  title="Invera Find My Mitra"
                   description="Help to find missing person."
                   icon={<ShieldAlert className="h-8 w-8 text-purple-400" />}
                   features={["Gesture recognition", "Predictive alerts", "Low-light performance", "Instant notification"]}
                   gradient="from-purple-900/20 to-fuchsia-900/20"
                   borderColor="border-purple-500/20"
-                   linkv="/llm"
+                   linkv="/mitra"
                 />
               </div>
             </TabsContent>
