@@ -157,81 +157,112 @@ const AboutPage = () => {
       <h2 className="text-3xl font-bold mb-4">Meet the Team</h2>
       <p className="text-muted-foreground">The minds behind the machines.</p>
     </div>
+{/* --- photo changes */}
+   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+  {/* --- CARD TEMPLATE FUNCTION --- */}
+  {[
+    { name: "Aarshia Verma", role: "Founder & CEO", img: "/aarshia.jpeg" },
+    { name: "Aarsh Verma", role: "Director", img: "/aarsh.jpeg" },
+    { name: "SVerma", role: "Advisor", img: "/public/satish.jpg" },
+    { name: "Manjula", role: "Advisor", img: "/manju.jpg" }
+  ].map((person, idx) => (
+    <motion.div
+      key={idx}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: idx * 0.15 }}
+      className="relative group"
+    >
 
-      {/* --- CARD TEMPLATE FUNCTION --- */}
-      {[
-        { name: "Aarshia Verma", role: "Founder & CEO", img: "/aarshia.jpeg" },
-        { name: "Aarsh Verma", role: "Director", img: "/aarsh.jpeg" },
-        { name: "SVerma", role: "Advisor", img: "/public/satish.jpg" },
-        { name: "Manjula", role: "Advisor", img: "/manju.jpg" }
-      ].map((person, idx) => (
-        <motion.div
-          key={idx}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: idx * 0.15 }}
-          className="relative group"
-        >
+      {/* 🔥 Neon Ring Glow */}
+      <div className="
+        absolute inset-0 rounded-2xl blur-xl opacity-0 
+        group-hover:opacity-70 transition-all duration-500
+        bg-gradient-to-r from-fuchsia-500 via-purple-500 to-blue-500
+      "></div>
 
-          {/* 🔥 Neon Ring Glow */}
-          <div className="
-            absolute inset-0 rounded-2xl blur-xl opacity-0 
-            group-hover:opacity-70 transition-all duration-500
-            bg-gradient-to-r from-fuchsia-500 via-purple-500 to-blue-500
-          "></div>
+      {/* 🌈 Animated Gradient Border */}
+      <div className="
+        relative rounded-2xl p-[2px]
+        bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500
+        animate-gradient-x
+        hover:shadow-[0_0_25px_5px_rgba(168,85,247,0.5)]
+        transition-all duration-500
+      ">
+        <div className="
+          rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 
+          overflow-hidden shadow-xl
+          group-hover:-translate-y-2 transition-all duration-300
+        ">
 
-          {/* 🌈 Animated Gradient Border */}
-          <div className="
-            relative rounded-2xl p-[2px]
-            bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500
-            animate-gradient-x
-            hover:shadow-[0_0_25px_5px_rgba(168,85,247,0.5)]
-            transition-all duration-500
-          ">
-            <div className="
-              rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 
-              overflow-hidden shadow-xl
-              group-hover:-translate-y-2 transition-all duration-300
-            ">
+          {/* ⭐ NEW CIRCULAR NEON IMAGE BLOCK ⭐ */}
+          <div className="flex justify-center pt-6 pb-4">
+            <div className="relative">
 
-              {/* Image */}
-              <div className="overflow-hidden">
-                <img
-                  src={person.img}
-                  alt={person.name}
-                  className="
-                    w-full h-60 object-cover rounded-t-2xl 
-                    group-hover:scale-110 transition-transform duration-700
-                  "
-                />
-              </div>
+              {/* Neon Glow Ring */}
+              <div className="
+                absolute inset-0 
+                rounded-full 
+                bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500
+                blur-xl opacity-50
+                group-hover:opacity-80
+                transition-all duration-700
+                animate-pulse
+              "></div>
 
-              {/* Content */}
-              <div className="p-5 text-center" >
-                <h3 className="text-lg font-semibold text-white">{person.name}</h3>
-               <p className="text-sm mb-4" style={{ color: "#FFD700" }}>{person.role}</p>
-
-                {/* Social Icons */}
-                <div className="flex items-center justify-center gap-5">
-                  <a href="#" className="hover:text-blue-400 transition">
-                    <Linkedin className="w-5 h-5" />
-                  </a>
-                  <a href="#" className="hover:text-pink-400 transition">
-                    <Mail className="w-5 h-5" />
-                  </a>
+              {/* Outer Gradient Ring */}
+              <div className="
+                w-36 h-36 rounded-full p-[3px]
+                bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500
+                relative
+                group-hover:scale-105
+                transition-all duration-500
+              ">
+                {/* Image */}
+                <div className="
+                  w-full h-full rounded-full overflow-hidden 
+                  bg-black shadow-xl
+                ">
+                  <img
+                    src={person.img}
+                    alt={person.name}
+                    className="
+                      w-full h-full object-cover
+                      group-hover:scale-110 transition-transform duration-700
+                    "
+                  />
                 </div>
               </div>
 
             </div>
           </div>
 
-        </motion.div>
-      ))}
+          {/* Content */}
+          <div className="p-5 text-center">
+            <h3 className="text-lg font-semibold text-white">{person.name}</h3>
+            <p className="text-sm mb-4" style={{ color: "#FFD700" }}>{person.role}</p>
 
-    </div>
+            {/* Social Icons */}
+            <div className="flex items-center justify-center gap-5">
+              <a href="#" className="hover:text-blue-400 transition">
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a href="#" className="hover:text-pink-400 transition">
+                <Mail className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </motion.div>
+  ))}
+
+</div>
+    {/* --- photo changes end */}
   </div>
 </section>
 
