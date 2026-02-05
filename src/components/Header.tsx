@@ -12,10 +12,9 @@ import AuthStatus from "@/components/AuthStatus";
 
 const navItems = [
   { name: "Home", href: "/" },
-  { name: "Property", href: "/property" },
+  { name: "Buy & Rent", href: "/property/listings" },
+  { name: "List Property", href: "/property/new" },
   { name: "Membership", href: "/membership" },
-  { name: "About Us", href: "/about" },
-  { name: "Contact Us", href: "/contact" },
   { name: "Admin Review", href: "/admin/review" },
   { name: "Admin Leads", href: "/admin/leads" },
   { name: "Login", href: "/auth/login" },

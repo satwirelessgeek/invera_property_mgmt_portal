@@ -20,7 +20,7 @@ export function Footer() {
               <span className="text-xl font-bold tracking-tight">Invera Labs</span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Cutting edge technology solutions to simplify your life and enhance productivity.
+              Verified property listings to buy, rent, and list homes across India.
             </p>
             <div className="flex items-center gap-4 mt-2">
               <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
@@ -48,18 +48,27 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  About Us
+                <Link
+                  href="/property/listings"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Buy & Rent
                 </Link>
               </li>
               <li>
-                <Link href="/products" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Products
+                <Link
+                  href="/property/new"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  List Property
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Contact
+                <Link
+                  href="/membership"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Membership
                 </Link>
               </li>
             </ul>
