@@ -4,16 +4,21 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { cn } from "@/lib/utils";
+import AuthStatus from "@/components/AuthStatus";
 
 const navItems = [
   { name: "Home", href: "/" },
+  { name: "Property", href: "/property" },
+  { name: "Membership", href: "/membership" },
   { name: "About Us", href: "/about" },
-  { name: "Products", href: "/products" },
   { name: "Contact Us", href: "/contact" },
+  { name: "Admin Review", href: "/admin/review" },
+  { name: "Admin Leads", href: "/admin/leads" },
+  { name: "Login", href: "/auth/login" },
 ];
 
 export function Header() {
@@ -70,9 +75,10 @@ export function Header() {
 
         {/* CTA Button */}
         <div className="hidden md:flex items-center gap-4">
-          <Button variant="default" size="sm" className="rounded-full px-6">
-            Get Started
+          <Button asChild variant="default" size="sm" className="rounded-full px-6">
+            <Link href="/property/new">List Property</Link>
           </Button>
+          <AuthStatus />
         </div>
 
         {/* Mobile Menu */}
@@ -101,7 +107,12 @@ export function Header() {
                   </Link>
                 ))}
               </nav>
-              <Button className="w-full rounded-full">Get Started</Button>
+              <Button asChild className="w-full rounded-full">
+                <Link href="/property/new">List Property</Link>
+              </Button>
+              <div className="pt-2">
+                <AuthStatus />
+              </div>
             </div>
           </SheetContent>
         </Sheet>

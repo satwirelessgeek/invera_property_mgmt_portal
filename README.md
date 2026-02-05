@@ -20,6 +20,39 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Backend setup (Supabase + Razorpay)
+
+1. Create a Supabase project.
+2. Run the SQL in `supabase/schema.sql` (includes media captions, leads, and timeline).
+3. Run the SQL in `supabase/rls.sql`.
+4. Run the SQL in `supabase/storage.sql`.
+5. Run the SQL in `supabase/search.sql` (lead search index).
+6. Create a storage bucket named `property-media`.
+7. Add these environment variables in `.env.local`:
+
+```
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+SUPABASE_SERVICE_ROLE_KEY=
+RAZORPAY_KEY_ID=
+RAZORPAY_KEY_SECRET=
+RAZORPAY_WEBHOOK_SECRET=
+EMAIL_WEBHOOK_URL=
+SMS_WEBHOOK_URL=
+WHATSAPP_WEBHOOK_URL=
+WHATSAPP_TEMPLATE_NAME=
+WHATSAPP_TEMPLATE_LANGUAGE=en
+```
+
+8. In Razorpay, create a key pair for test mode and use those values.
+9. Create a Razorpay webhook pointing to `/api/payments/webhook` with the same
+   webhook secret.
+10. (Optional) Set `EMAIL_WEBHOOK_URL` and `SMS_WEBHOOK_URL` to receive lead
+   notifications.
+11. (Optional) Set `WHATSAPP_WEBHOOK_URL` for WhatsApp lead notifications.
+12. (Optional) Set `WHATSAPP_TEMPLATE_NAME` and `WHATSAPP_TEMPLATE_LANGUAGE`
+    for WhatsApp template payloads.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
