@@ -53,6 +53,16 @@ WHATSAPP_TEMPLATE_LANGUAGE=en
 12. (Optional) Set `WHATSAPP_TEMPLATE_NAME` and `WHATSAPP_TEMPLATE_LANGUAGE`
     for WhatsApp template payloads.
 
+## CI and Vercel
+
+- GitHub Actions workflow: `.github/workflows/ci.yml`
+- Vercel deploy workflow: `.github/workflows/vercel-deploy.yml`
+
+To enable Vercel deployment, add these GitHub secrets:
+- `VERCEL_TOKEN`
+- `VERCEL_ORG_ID`
+- `VERCEL_PROJECT_ID`
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
